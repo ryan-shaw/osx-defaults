@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/rshaw/.oh-my-zsh
+export ZSH=$(pwd)/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +53,7 @@ plugins=(git brew npm node osx python vagrant sudo aws common-aliases docker enc
 
 # User configuration
 
-export PATH="/Users/rshaw/.nvm/versions/node/v4.4.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,3 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
+
+# Custom sources
+source ~/.nvm/nvm.sh
